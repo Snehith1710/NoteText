@@ -1,0 +1,101 @@
+$font: "Oxygen", sans-serif;
+
+body {
+  height: 1vh;
+  background: #333399; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff00cc,
+    #333399
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #ff00cc,
+    #333399
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin position {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+
+#navbar {
+  display: flex;
+}
+
+#heading {
+  margin-right: 70%;
+  margin-left: 20px;
+  font-family: $font;
+  color: #fff;
+}
+
+#navOptions {
+  margin-top: 25px;
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  font-family: $font;
+}
+
+#open {
+  color: antiquewhite;
+  margin-right: 55px;
+  &:hover {
+    color: black;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+  }
+}
+
+#save {
+  color: antiquewhite;
+  &:hover {
+    color: black;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+  }
+}
+
+#content {
+  @include position;
+  font-family: $font;
+  margin-top: 50px;
+  height: 360px;
+  border-radius: 8px;
+}
+
+#content::placeholder {
+  color: #000;
+  font-family: $font;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+i {
+  color: #fff;
+  &:hover {
+    color: #000;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #content {
+    height: 350px;
+  }
+
+  #heading {
+    margin-right: 18%;
+  }
+
+  #open {
+    margin-right: 25px;
+  }
+}

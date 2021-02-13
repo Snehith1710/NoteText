@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>NoteText - Make notes, Write texts, Save your Text files</title>
+
+    <meta
+      name="description"
+      content="NoteText is a simple online text editor and note maker. NoteText allows you to create and open text files, and save it to your PC. "
+    />
+
+    <meta
+      name="viewport"
+      content="width=device-width, 
+        initial-scale=1"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <h1 id="heading">NoteText.</h1>
+
+      <!--this line below writes the para-->
+
+      <ul id="navOptions">
+        <li id="open">OPEN</li>
+        <li id="save">SAVE</li>
+      </ul>
+    </nav>
+
+    <main>
+      <textarea
+        id="content"
+        placeholder="Write here..."
+        autocomplete="on"
+        spellcheck="true"
+        autocorrect="true"
+      ></textarea>
+    </main>
+    <p
+      style="
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+        font-family: Oxygen, sans-serif;
+      "
+    >
+      Developed By Snehith.M
+      <i
+        style="color: black; margin: 4px"
+        class="fa fa-level-down"
+        aria-hidden="true"
+      ></i>
+    </p>
+    <div class="footer">
+      <a href="" title="mangolusnehith1710@gmail.com"
+        ><i class="fa fa-envelope fa-2x" aria-hidden="true"> </i
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/snehith-mangolu-24b229204/"
+        target="_blank"
+      >
+        <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i
+      ></a>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>

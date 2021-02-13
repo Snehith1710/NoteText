@@ -1,0 +1,119 @@
+body {
+  height: 1vh;
+  background: #333399;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, right top, left top, from(#ff00cc), to(#333399));
+  background: linear-gradient(to left, #ff00cc, #333399);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#heading {
+  margin-right: 70%;
+  margin-left: 20px;
+  font-family: "Oxygen", sans-serif;
+  color: #fff;
+}
+
+#navOptions {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Oxygen", sans-serif;
+}
+
+#open {
+  color: antiquewhite;
+  margin-right: 55px;
+}
+
+#open:hover {
+  color: black;
+  border-bottom: 2px solid black;
+  cursor: pointer;
+}
+
+#save {
+  color: antiquewhite;
+}
+
+#save:hover {
+  color: black;
+  border-bottom: 2px solid black;
+  cursor: pointer;
+}
+
+#content {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+  font-family: "Oxygen", sans-serif;
+  margin-top: 50px;
+  height: 360px;
+  border-radius: 8px;
+}
+
+#content::-webkit-input-placeholder {
+  color: #000;
+  font-family: "Oxygen", sans-serif;
+}
+
+#content:-ms-input-placeholder {
+  color: #000;
+  font-family: "Oxygen", sans-serif;
+}
+
+#content::-ms-input-placeholder {
+  color: #000;
+  font-family: "Oxygen", sans-serif;
+}
+
+#content::placeholder {
+  color: #000;
+  font-family: "Oxygen", sans-serif;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+i {
+  color: #fff;
+}
+
+i:hover {
+  color: #000;
+}
+
+@media screen and (max-width: 650px) {
+  #content {
+    height: 350px;
+  }
+  #heading {
+    margin-right: 18%;
+  }
+  #open {
+    margin-right: 25px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
